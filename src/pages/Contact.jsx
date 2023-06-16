@@ -6,16 +6,14 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Simulating successful form submission
-    // You can replace this with your own form submission logic
 
-    // Display the modal message
+   
     setShowModal(true);
 
-    // Reset form fields
+ 
     e.target.reset();
 
-    // Hide the modal after 3 seconds
+   
     setTimeout(() => {
       setShowModal(false);
     }, 3000);
