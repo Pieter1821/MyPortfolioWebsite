@@ -6,7 +6,6 @@ import Footer from './components/Footer';
 import Home from './pages/home';
 import About from './pages/about';
 import Projects from './pages/projects';
-import ProjectDisplay from './pages/ProjectDisplay';
 import Skills from './pages/Skills';
 import Contact  from './pages/contact';
 
@@ -24,7 +23,6 @@ export default function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/projects" element={<Projects />} />
-          <Route path="/projects/:id" element={<ProjectDisplay />} />
           <Route path="/skills" element={<Skills />} />
           <Route path='/Contact' element={<Contact/>} />'
         </Routes>

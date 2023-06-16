@@ -1,26 +1,47 @@
-
+import '../styles/Contact.css'
+import  { useState } from 'react';
 
 const Contact = () => {
+  const [showModal, setShowModal] = useState(false);
+
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle form submission logic here
+    // Simulating successful form submission
+    // You can replace this with your own form submission logic
+
+    // Display the modal message
+    setShowModal(true);
+
+    // Reset form fields
+    e.target.reset();
+
+    // Hide the modal after 3 seconds
+    setTimeout(() => {
+      setShowModal(false);
+    }, 3000);
   };
 
   return (
     <section className="contact">
       <h1>Contact</h1>
-      <form onSubmit={handleSubmit}>
+      <form className="contact-form" onSubmit={handleSubmit}>
         <label htmlFor="name">Name:</label>
-        <input type="text" id="name" placeholder="Enter your name" />
+        <input type="text" id="name" placeholder="Enter your name" required />
 
         <label htmlFor="email">Email:</label>
-        <input type="email" id="email" placeholder="Enter your email" />
+        <input type="email" id="email" placeholder="Enter your email" required />
 
         <label htmlFor="message">Message:</label>
-        <textarea id="message" placeholder="Enter your message"></textarea>
+        <textarea id="message" placeholder="Enter your message" required></textarea>
 
         <button type="submit">Submit</button>
       </form>
+
+      {showModal && (
+        <div className="modal">
+          <p>Message sent successfully!</p>
+        </div>
+      )}
     </section>
   );
 };

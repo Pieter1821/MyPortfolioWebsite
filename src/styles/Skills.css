@@ -1,0 +1,70 @@
+.skills-container {
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .skills-section {
+    margin-bottom: 20px;
+  }
+  
+  h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+    text-align: center;
+  }
+  
+  h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #666;
+  }
+  
+  ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    color: #444;
+  }
+  
+  .skill-icon {
+    margin-right: 10px;
+    font-size: 18px;
+  }
+  
+  .html-icon {
+    color: #f16529;
+  }
+  
+  .css-icon {
+    color: #2965f1;
+  }
+  
+  .js-icon {
+    color: #f7df1e;
+  }
+  
+  .react-icon {
+    color: #61dbfb;
+  }
+  
+  .node-icon {
+    color: #3c873a;
+  }
+  
+  .python-icon {
+    color: #306998;
+  }
+  
+  .django-icon {
+    color: #092e20;
+  }
+  

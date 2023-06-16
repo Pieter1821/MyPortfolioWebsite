@@ -1,6 +1,9 @@
 .footer {
-   margin-top: auto;
+   padding: 50px;
    position: sticky;
-   bottom: 0;
+   text-align: center;
+
+
+
    
 }
