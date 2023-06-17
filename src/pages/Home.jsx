@@ -24,7 +24,7 @@ export function Home() {
           View Projects
         </Link>
 
-        <a href="/path/to/resume.pdf" className="btn-resume">
+        <a href="https://drive.google.com/file/d/18sRP0JWQFy5HTArt_eMFmAlhzxgvvvON/view?usp=drivesdk" className="btn-resume">
           View Resume
         </a>
       </div>
