@@ -18,8 +18,12 @@ export default function App() {
     <div className="App">
       <Router>
         <Navbar />
+      
 
-        <Suspense fallback={<div className="loading">Loading...</div>}>
+        <Suspense fallback={<div className="loading">
+          <h1>Loading...</h1>
+        <Spinner />
+          </div>}>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />

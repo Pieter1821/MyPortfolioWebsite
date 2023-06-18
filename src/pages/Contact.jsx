@@ -1,22 +1,40 @@
+import { useState } from "react";
 import '../styles/Contact.css'
-import  { useState } from 'react';
 
 const Contact = () => {
   const [showModal, setShowModal] = useState(false);
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
-   
-    setShowModal(true);
+    // Show loading state or disable the submit button
 
- 
-    e.target.reset();
+    try {
+      const formData = new FormData(e.target);
+      const payload = Object.fromEntries(formData.entries());
 
-   
-    setTimeout(() => {
-      setShowModal(false);
-    }, 3000);
+      const response = await fetch('/send-email', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(payload)
+      });
+
+      if (response.ok) {
+        e.target.reset();
+        setShowModal(true);
+        setTimeout(() => {
+          setShowModal(false);
+        }, 3000);
+      } else {
+        // Handle error state, e.g., show error message or enable submit button again
+        console.error('Error sending email:', response.statusText);
+      }
+    } catch (error) {
+      console.error('Error sending email:', error);
+      // Handle error state, e.g., show error message or enable submit button again
+    }
   };
 
   return (
@@ -36,7 +54,7 @@ const Contact = () => {
       </form>
 
       {showModal && (
-        <div className="modal">
+        <div className="modal" role="alertdialog">
           <p>Message sent successfully!</p>
         </div>
       )}

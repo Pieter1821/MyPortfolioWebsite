@@ -1,33 +1,37 @@
 import { Link } from "react-router-dom";
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
-import '../styles/projects.css';
+import "../styles/projects.css";
+import bankingapp from "../assets/bankingapp.png";
+import CALCULATOR from "../assets/CALCULATOR.jpeg";
+import MyTODOAPP from "../assets/MyTODOAPP.jpeg";
 
 export function Projects() {
   const projects = [
     {
-      name: "Project Name 1",
-      imageSrc: "https://via.placeholder.com/150",
-      description: "Project description goes here...",
-      technologies: ["React", "Node.js", "MongoDB"],
-      githubUrl: "https://github.com/your-username/project-name1",
-      livePreviewUrl: "https://your-projects-url1.com"
+      name: "TODO APP",
+      imageSrc: MyTODOAPP,
+      description:
+        "My Todo App: Stay organized effortlessly with a simple, intuitive task management application for all your daily responsibilities.",
+      technologies: ["React"],
+      githubUrl: "https://github.com/Pieter1821/My-Todo-App/",
+      livePreviewUrl: "https://todo-appto.netlify.app/",
     },
     {
-      name: "Project Name 2",
-      imageSrc: "https://via.placeholder.com/150",
-      description: "Project description goes here...",
-      technologies: ["React", "Express", "Firebase"],
-      githubUrl: "https://github.com/your-username/project-name2",
-      livePreviewUrl: "https://your-projects-url2.com"
+      name: "My-Simple-Calculator",
+      imageSrc: CALCULATOR,
+      description: "This is a basic calculator app built using HTML, CSS, and JavaScript",
+      technologies: ["JavaScript"],
+      githubUrl: "",
+      livePreviewUrl: "https://mysimplecalculater.netlify.app/",
     },
     {
-      name: "Project Name 3",
-      imageSrc: "https://via.placeholder.com/150",
-      description: "Project description goes here...",
-      technologies: ["React", "Django", "PostgreSQL"],
-      githubUrl: "https://github.com/your-username/project-name3",
-      livePreviewUrl: "https://your-projects-url3.com"
-    }
+      name: "Banking-App",
+      imageSrc: bankingapp,
+      description:
+        "This is a simple bank account management system implemented in Python. The program allows users to make deposits and withdrawals, view their account balance, and view a transaction log.",
+      technologies: ["Python"],
+      githubUrl: "https://github.com/Pieter1821/BankingApp",
+    },
   ];
 
   return (
@@ -48,14 +52,16 @@ export function Projects() {
             >
               <FaGithub /> View Repository
             </Link>
-            <Link
-              to={project.livePreviewUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn"
-            >
-              <FaExternalLinkAlt /> View Live Preview
-            </Link>
+            {project.livePreviewUrl && (
+              <Link
+                to={project.livePreviewUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn"
+              >
+                <FaExternalLinkAlt /> View Live Preview
+              </Link>
+            )}
           </div>
         </div>
       ))}
