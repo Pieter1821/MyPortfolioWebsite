@@ -1,7 +1,7 @@
 
 
 
-Welcome to my portfolio website! This website showcases my projects, skills, and experience. You can visit the live site at [https://my-vite-portfolio-website.netlify.app/](https://my-vite-portfolio-website.netlify.app/).
+Welcome to my portfolio website! This website showcases my projects, skills, and experience. You can visit the live site at[ https://my-react-portfolio-website.netlify.app/ ]
 
 ## Table of Contents
 - [Introduction](#introduction)
