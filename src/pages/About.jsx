@@ -3,7 +3,7 @@ import "../styles/About.css"
 export function About() {
   return (
     <div className="about">
-      <h1>About</h1>
+      <h1>About me</h1>
 
       <p>
         Welcome to my Portfolio. My name is <strong>Pieter Deane</strong> and I am a <strong>self-taught developer</strong> with a passion for building websites and applications.Although i don't have a formal	computer science,
