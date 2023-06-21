@@ -1,4 +1,5 @@
 import { useState } from "react";
+import emailjs from 'emailjs-com';
 import '../styles/Contact.css'
 
 const Contact = () => {
@@ -7,33 +8,27 @@ const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    // Show loading state or disable the submit button
-
     try {
       const formData = new FormData(e.target);
       const payload = Object.fromEntries(formData.entries());
 
-      const response = await fetch('/send-email', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(payload)
-      });
+      const serviceId = 'service_eny5cjq';
+      const templateId = 'template_uhcpi79';
+      const userId = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
 
-      if (response.ok) {
+      const response = await emailjs.send(serviceId, templateId, payload, userId);
+
+      if (response.status === 200) {
         e.target.reset();
         setShowModal(true);
         setTimeout(() => {
           setShowModal(false);
-        }, 3000);
+        }, 5000);
       } else {
-        // Handle error state, e.g., show error message or enable submit button again
-        console.error('Error sending email:', response.statusText);
+        console.error('Error sending email:', response.text);
       }
     } catch (error) {
       console.error('Error sending email:', error);
-      // Handle error state, e.g., show error message or enable submit button again
     }
   };
 

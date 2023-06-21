@@ -7,7 +7,7 @@ export default function Navbar() {
   return (
     <nav className="navbar">
       <div className="navbar__logo">
-        <img src={navbarLogo} alt="Navbar  " width='100px' height='100px' />
+        <img src={navbarLogo} alt="Navbar" width='100px' height='100px' />
       </div>
       <ul className="navbar__menu">
         <li className="navbar__item">

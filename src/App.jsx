@@ -18,28 +18,28 @@ export default function App() {
     <div className="App">
       <Router>
         <Navbar />
-      
 
-        <Suspense fallback={<div className="loading">
-          <h1>Loading...</h1>
-        <Spinner />
+        <main role="main" className="content">
+          <Suspense fallback={<div className="loading" aria-label="Loading">
+            <h1>Loading...</h1>
+            <Spinner />
           </div>}>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/projects" element={<Projects />} />
-            <Route path="/skills" element={<Skills />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="*" element={<Error />} />
-          </Routes>
-        </Suspense>
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/projects" element={<Projects />} />
+              <Route path="/skills" element={<Skills />} />
+              <Route path="/contact" element={<Contact />} />
+              <Route path="*" element={<Error />} />
+            </Routes>
+          </Suspense>
+        </main>
 
-   
-    
         <Footer />
       </Router>
 
       {/* Placeholder image illustrations */}
+      <img src="placeholder.jpg" alt="Illustrative image" aria-hidden="true" style={{ display: 'none' }} />
     </div>
   );
 }
