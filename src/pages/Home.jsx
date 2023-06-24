@@ -25,7 +25,7 @@ export function Home() {
           View Projects
         </Link>
 
-        <Link to="https://www.dropbox.com/s/jtpdfbdgx5btltz/Pieter%20Deane%20CV%20%282%29.pdf?dl=0" className="btn-resume">
+        <Link to="https://www.dropbox.com/s/tv3mc3105lesggl/Pieter_Deane_CV.pdf?dl=0" className="btn-resume">
           View Resume
         </Link>
       </div>
