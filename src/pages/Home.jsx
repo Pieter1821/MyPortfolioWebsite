@@ -1,8 +1,9 @@
 import { Link } from "react-router-dom";
-import '../styles/home.css'
-import illustration from '../assets/illustration.svg'
+import React from 'react';
+import '../styles/home.css';
+import illustration from '../assets/illustration.svg';
 
-export function Home() {
+const Home = () => {
   return (
     <>
       <div className="home">
@@ -25,13 +26,20 @@ export function Home() {
         <Link to="/Projects" className="btn-projects">
           View Projects
         </Link>
-        <Link to="https://www.dropbox.com/s/tv3mc3105lesggl/Pieter_Deane_CV.pdf?dl=0" className="btn-resume">
+        <a
+          href="https://www.dropbox.com/s/tv3mc3105lesggl/Pieter_Deane_CV.pdf?dl=0"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="btn-resume"
+        >
           View Resume
-        </Link>
+        </a>
       </div>
-      <img src={illustration}  alt="illustration picture" className="illustration" />
+      <img src={illustration} alt="illustration picture" className="illustration" />
     </>
   );
 }
 
 export default Home;
+
+
