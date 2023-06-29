@@ -1,8 +1,11 @@
 .home {
-  background-color: #f5f5f5;
+ 
   padding: 20px;
   text-align: center;
 }
+
+  
+
 
 .container-home {
   max-width: 600px;
@@ -24,48 +27,35 @@ p {
   line-height: 1.5;
 }
 
+.btn-projects,
+.btn-resume {
+  border: solid 1px rgb(67, 64, 64);
+  background-color: yellow;
+  padding: 15px;
+  border-radius: 4px;
+  color: #333;
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn-projects:hover,
+.btn-resume:hover {
+  background-color: #ffd700;
+}
+
+.illustration {
+  display: flex;
+  text-align: center;
+  width: 100%;
+  height: 300px;
+}
+
+
 .buttons-container {
   display: flex;
   justify-content: center;
   margin-top: 20px;
-}
-
-.btn {
-  display: inline-block;
-  background-color: #007bff;
-  color: #fff;
-  padding: 10px 20px;
-  border-radius: 4px;
-  text-decoration: none;
-  margin-right: 10px;
-  font-size: 16px;
-  font-family: 'Montserrat', sans-serif;
-  text-transform: uppercase;
-  transition: background-color 0.3s ease;
-}
-
-.btn:hover {
-  background-color: #0056b3;
-}
-
-.btn-projects,
-.btn-resume {
-  border: none;
-  border-radius: 4px;
-  border-width: 2px;
-  border-style: solid;
-  border-color: #333;
-}
-
-/* Additional Styles */
-
-a.btn-projects,
-a.btn-resume {
-  text-transform: uppercase;
-  transition: background-color 0.3s ease;
-}
-
-a.btn-projects:hover,
-a.btn:hover {
-  background-color: #333;
 }

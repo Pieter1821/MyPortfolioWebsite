@@ -18,12 +18,15 @@ export default function App() {
     <div className="App">
       <Router>
         <Navbar />
-
         <main role="main" className="content">
-          <Suspense fallback={<div className="loading" aria-label="Loading">
-            <h1>Loading...</h1>
-            <Spinner />
-          </div>}>
+          <Suspense
+            fallback={
+              <div className="loading" aria-label="Loading">
+                <h1>Loading...</h1>
+                <Spinner />
+              </div>
+            }
+          >
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/about" element={<About />} />
@@ -34,12 +37,8 @@ export default function App() {
             </Routes>
           </Suspense>
         </main>
-
         <Footer />
       </Router>
-
-      {/* Placeholder image illustrations */}
-      <img src="placeholder.jpg" alt="Illustrative image" aria-hidden="true" style={{ display: 'none' }} />
     </div>
   );
 }

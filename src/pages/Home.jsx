@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import '../styles/home.css'
+import illustration from '../assets/illustration.svg'
 
 export function Home() {
   return (
@@ -24,16 +25,11 @@ export function Home() {
         <Link to="/Projects" className="btn-projects">
           View Projects
         </Link>
-
         <Link to="https://www.dropbox.com/s/tv3mc3105lesggl/Pieter_Deane_CV.pdf?dl=0" className="btn-resume">
           View Resume
         </Link>
       </div>
-
-      <img
-        src="https://picsum.photos/350/300?random=7"
-        alt="Placeholder Illustration 1"
-      />
+      <img src={illustration}  alt="illustration picture" className="illustration" />
     </>
   );
 }

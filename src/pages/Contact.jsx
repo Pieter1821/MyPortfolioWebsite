@@ -23,7 +23,7 @@ const Contact = () => {
         setShowModal(true);
         setTimeout(() => {
           setShowModal(false);
-        }, 5000);
+        }, 3000);
       } else {
         console.error('Error sending email:', response.text);
       }
