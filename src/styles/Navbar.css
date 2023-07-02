@@ -1,7 +1,7 @@
 .navbar {
   display: flex;
   justify-content: center;
-  background-color: whitesmoke;
+  background-color: transparent;
   padding: 15px;
   list-style: none;
 }
@@ -54,15 +54,4 @@
   color: whitesmoke;
 }
 
-@media screen and (max-width: 768px) {
-  .navbar {
-    flex-direction: column;
-    padding: 20px;
-  }
 
-  .navbar__menu {
-    margin-top: 20px;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-}

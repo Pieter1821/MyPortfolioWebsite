@@ -1,28 +1,74 @@
 import { Link } from "react-router-dom";
 import React from 'react';
+import { motion } from 'framer-motion';
 import '../styles/home.css';
 import illustration from '../assets/illustration.svg';
 
 const Home = () => {
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        duration: 1,
+        delay: 0.5,
+      },
+    },
+  };
+
+  const textVariants = {
+    hidden: { opacity: 0, y: -50 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.5,
+        delay: 1,
+      },
+    },
+  };
+
+  const buttonVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        duration: 0.5,
+        delay: 1.5,
+      },
+    },
+  };
+
   return (
     <>
-      <div className="home">
+      <motion.div
+        className="home"
+        variants={containerVariants}
+        initial="hidden"
+        animate="visible"
+      >
         <div className="container-home">
-          <h1>Pieter Deane</h1>
-          <h2>Software Developer</h2>
-          <p>
+          <motion.h1 variants={textVariants}>Pieter Deane</motion.h1>
+          <motion.h2 variants={textVariants}>Software Developer</motion.h2>
+          <motion.p variants={textVariants}>
             Welcome to my Portfolio!
             <br />
             Here you can find some of my projects and learn more about me.
-          </p>
-          <p>
+          </motion.p>
+          <motion.p variants={textVariants}>
             Feel free to contact me if you have any questions or if you would
             like to collaborate on a project.
-          </p>
+          </motion.p>
         </div>
-      </div>
+      </motion.div>
 
-      <div className="buttons-container">
+      <motion.div
+        className="buttons-container"
+        variants={buttonVariants}
+        initial="hidden"
+        animate="visible"
+        transition={{ duration: 6 }}
+      >
         <Link to="/Projects" className="btn-projects">
           View Projects
         </Link>
@@ -34,12 +80,17 @@ const Home = () => {
         >
           View Resume
         </a>
-      </div>
-      <img src={illustration} alt="illustration picture" className="illustration" />
+      </motion.div>
+      <motion.img
+        src={illustration}
+        alt="illustration picture"
+        className="illustration"
+        initial={{ opacity: 0, scale: 0.5 }}
+        animate={{ opacity: 30, scale: 1 }}
+        transition={{ duration: 6, delay: 2 }}
+      />
     </>
   );
 }
 
 export default Home;
-
-

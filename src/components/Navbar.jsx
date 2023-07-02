@@ -1,10 +1,20 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { useScroll, motion } from 'framer-motion';
 import '../styles/Navbar.css';
 
 export default function Navbar() {
+  const { scrollYProgress } = useScroll();
+
   return (
-    <nav className="navbar">
+    <motion.nav
+      className="navbar"
+      style={{
+        backgroundColor: scrollYProgress.current > 0 ? 'whitesmoke' : 'transparent',
+        padding: '15px',
+        listStyle: 'none',
+      }}
+    >
       <div className="navbar__menu">
         <li className="navbar__item">
           <Link to="/" className="navbar__link" activeclassname="active">
@@ -32,6 +42,6 @@ export default function Navbar() {
           </Link>
         </li>
       </div>
-    </nav>
+    </motion.nav>
   );
 }

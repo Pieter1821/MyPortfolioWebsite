@@ -5,6 +5,7 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Spinner from './components/Spinner';
 import Error from './components/Error';
+import { AnimatePresence } from 'framer-motion';
 
 // Lazy-loaded components
 const Home = React.lazy(() => import('./pages/home'));
@@ -27,6 +28,8 @@ export default function App() {
               </div>
             }
           >
+            <AnimatePresence mode='wait'>
+
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/about" element={<About />} />
@@ -35,6 +38,7 @@ export default function App() {
               <Route path="/contact" element={<Contact />} />
               <Route path="*" element={<Error />} />
             </Routes>
+            </AnimatePresence>
           </Suspense>
         </main>
         <Footer />

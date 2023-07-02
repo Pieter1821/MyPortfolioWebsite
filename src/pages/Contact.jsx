@@ -37,21 +37,23 @@ const Contact = () => {
       <h1>Contact</h1>
       <form className="contact-form" onSubmit={handleSubmit}>
         <label htmlFor="name">Name:</label>
-        <input type="text" id="name" placeholder="Enter your name" required />
+        <input type="text" name="name" id="name" placeholder="Enter your name" required />
 
         <label htmlFor="email">Email:</label>
-        <input type="email" id="email" placeholder="Enter your email" required />
+        <input type="email" name="email" id="email" placeholder="Enter your email" required />
 
         <label htmlFor="message">Message:</label>
-        <textarea id="message" placeholder="Enter your message" required></textarea>
+        <textarea name="message" id="message" placeholder="Enter your message" required></textarea>
 
         <button type="submit">Submit</button>
       </form>
+      
 
       {showModal && (
         <div className="modal" role="alertdialog">
           <p>Message sent successfully!</p>
         </div>
+         
       )}
     </section>
   );
