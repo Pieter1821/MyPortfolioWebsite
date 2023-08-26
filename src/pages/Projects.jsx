@@ -4,6 +4,8 @@ import "../styles/projects.css";
 import bankingapp from "../assets/bankingapp.png";
 import CALCULATOR from "../assets/CALCULATOR.jpeg";
 import MyTODOAPP from "../assets/MyTODOAPP.jpeg";
+import LogoRecipeApp from "../assets/LogoRecipeApp.jpg";
+
 
 export function Projects() {
   const projects = [
@@ -32,11 +34,22 @@ export function Projects() {
       technologies: ["Python"],
       githubUrl: "https://github.com/Pieter1821/BankingApp",
     },
+    {
+      name: "My-Recipe-App",
+      imageSrc: LogoRecipeApp,
+      description:
+        "This is a recipe app that allows users to search for recipes",
+        technologies: ["React"],
+      githubUrl: "https://github.com/Pieter1821/My-React-Recipe-App",
+      livePreviewUrl: "https://yourfavoriterecipe.netlify.app/",
+    
+    },
+    
   ];
+     
 
   return (
     <div className="projects">
-      <h2>My Projects</h2>
       {projects.map((project, index) => (
         <div className="project" key={index}>
           <h3>{project.name}</h3>

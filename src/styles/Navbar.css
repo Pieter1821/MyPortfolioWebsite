@@ -1,10 +1,12 @@
-.transparent-bg {
-    background-color: transparent;
-  }
-
-
-  .navbar-container {
+.navbar-container  {
     display: flex;
-    justify-content: space-between;
-    width: max-content;
+    justify-content: center;
   }
+  
+  .navbar-container nav {
+    padding: 1rem 0;
+  }
+
+
+  
+  

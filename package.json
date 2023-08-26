@@ -11,15 +11,9 @@
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.4.0",
-    "@headlessui/react": "^1.7.17",
-    "@heroicons/react": "^1.0.6",
     "emailjs-com": "^3.2.0",
-<<<<<<< HEAD
-    "framer": "^2.3.0",
-    "motion": "^10.16.2",
-=======
-    "framer-motion": "^10.12.20",
->>>>>>> 0b69c8a3039409ef8d15253448e1c0b2e2ae145e
+    "flowbite": "^1.8.1",
+    "framer-motion": "^10.12.18",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.9.0",
@@ -34,8 +28,6 @@
     "eslint-plugin-react": "^7.32.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.3.4",
-    "postcss": "^8.4.28",
-    "tailwindcss": "^3.3.3",
     "vite": "^4.3.9"
   },
   "main": "vite.config.js",
