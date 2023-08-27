@@ -1,13 +1,16 @@
+/* Styling for the container */
 .about {
   max-width: 600px;
   margin: 0 auto;
   padding: 40px;
   background-color: #f7f7f7;
   border-radius: 10px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle box shadow */
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out; /* Added transitions */
   animation: fadeIn 0.5s ease-in-out;
 }
 
+/* Keyframes animation for fading in */
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -19,13 +22,15 @@
   }
 }
 
+/* Styling for the main heading */
 h1 {
-  font-size: 24px;
-  margin-bottom: 20px;
+  font-size: 28px; /* Increased font size */
+  margin-bottom: 24px; /* Increased margin */
   color: #333;
   animation: slideIn 0.5s ease-in-out;
 }
 
+/* Keyframes animation for sliding in */
 @keyframes slideIn {
   0% {
     opacity: 0;
@@ -37,19 +42,22 @@ h1 {
   }
 }
 
+/* Styling for paragraphs */
 p {
-  font-size: 16px;
-  line-height: 1.5;
-  margin-bottom: 16px;
+  font-size: 18px; /* Increased font size */
+  line-height: 1.6; /* Slightly adjusted line height */
+  margin-bottom: 20px; /* Increased margin */
   animation: fadeIn 0.5s ease-in-out;
 }
 
+/* Styling for bold text */
 strong {
   font-weight: bold;
   color: #555;
-  transition: color 0.3s ease-in-out;
+  transition: color 0.5s ease-in-out; /* Increased transition duration */
 }
 
+/* Hover effect for bold text */
 strong:hover {
   color: #f44336;
 }

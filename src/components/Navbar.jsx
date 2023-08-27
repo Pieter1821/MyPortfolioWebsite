@@ -20,7 +20,7 @@ export default function Navbar() {
 
   return (
     <div className="navbar-container">
-      <nav className="bg-white border-gray-200 px-2 sm:px:4 py-2">
+      <nav className="bg-white border-gray-200 px-2 sm:px:4 py-2 w-full">
         <div className="max-w-screen-xl mx-auto px-4 md:px-8">
           <div className="flex items-center justify-between h-16">
             <div className="md:hidden">
@@ -44,13 +44,13 @@ export default function Navbar() {
             </div>
           </div>
           {isOpen && (
-            <div className=" mt-2">
+            <div className=" mt-2 flex justify-center">
               <ul className="flex flex-col space-y-2">
                 {links.map((link, index) => (
                   <Link
                     key={index}
                     to={link.to}
-                    className="nav-link text-gray-800 hover:text-gray-600"
+                    className="nav-link text-gray-800 hover:text-blue-600"
                     activeClassName="font-semibold text-gray-600"
                   >
                     {link.label}

@@ -1,70 +1,75 @@
 .skills-container {
-  width: 400px;
-  margin: 0 auto;
-  padding: 20px;
-  border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 4rem;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
 
+.skills-heading {
+  color: #333;
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
 }
 
 .skills-section {
-  margin-bottom: 20px;
+  margin-bottom: 4rem;
 }
 
-h1 {
-  font-size: 24px;
-  margin-bottom: 10px;
-  color: #333;
-  text-align: center;
+.skills-subheading {
+  color: #444;
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
 }
 
-h2 {
-  font-size: 20px;
-  margin-bottom: 10px;
-  color: #666;
-}
-
-ul {
+.skills-list {
   list-style: none;
-  padding-left: 0;
+  padding: 0;
 }
 
-li {
-  margin-bottom: 10px;
+.skill-item {
   display: flex;
   align-items: center;
-  color: #444;
+  margin-bottom: 1.5rem;
+  font-size: 1.4rem;
+  padding: 0.5rem;
+  border-radius: 4px;
+  transition: box-shadow 0.3s ease;
 }
 
-.skill-icon {
-  margin-right: 10px;
-  font-size: 18px;
+.skill-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
 }
 
-.html-icon {
-  color: #f16529;
+/* Front-end Icons */
+.skill-icon-html {
+  color: #f06529;
 }
 
-.css-icon {
+.skill-icon-css {
   color: #2965f1;
 }
 
-.js-icon {
-  color: #f7df1e;
+.skill-icon-js {
+  color: #f5c542;
 }
 
-.react-icon {
-  color: #61dbfb;
+.skill-icon-react {
+  color: #67a4d3;
 }
 
-.node-icon {
-  color: #3c873a;
+/* Back-end Icons */
+.skill-icon-nodejs {
+  color: #68a063;
 }
 
-.python-icon {
-  color: #306998;
+.skill-icon-python {
+  color: #3c72a9;
 }
 
-.django-icon {
-  color: #092e20;
+.skill-icon-django {
+  color: #0b402a;
 }

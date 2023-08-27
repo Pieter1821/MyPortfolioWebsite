@@ -7,42 +7,42 @@ import '../styles/Skills.css';
 const Skills = () => {
   return (
     <div className="skills-container">
-      <h1>Skills</h1>
+      <span className="skills-heading">Skills</span>
       <div className="skills-section">
-        <h2>Front-end</h2>
-        <ul>
-          <li>
-            <FaHtml5 className="skill-icon" />
+        <h4 className="skills-subheading">Front-end</h4>
+        <ul className="skills-list">
+          <li className="skill-item">
+            <FaHtml5 className="skill-icon-html" />
             HTML
           </li>
-          <li>
-            <FaCss3 className="skill-icon" />
+          <li className="skill-item">
+            <FaCss3 className="skill-icon-css" />
             CSS
           </li>
-          <li>
-            <FaJs className="skill-icon" />
+          <li className="skill-item">
+            <FaJs className="skill-icon-js" />
             JavaScript
           </li>
-          <li>
-            <FaReact className="skill-icon" />
+          <li className="skill-item">
+            <FaReact className="skill-icon-react" />
             React
           </li>
         </ul>
       </div>
 
       <div className="skills-section">
-        <h2>Back-end</h2>
-        <ul>
-          <li>
-            <IoLogoNodejs className="skill-icon" />
+        <h2 className="skills-subheading">Back-end</h2>
+        <ul className="skills-list">
+          <li className="skill-item">
+            <IoLogoNodejs className="skill-icon-nodejs" />
             Node.js
           </li>
-          <li>
-            <IoLogoPython className="skill-icon" />
+          <li className="skill-item">
+            <IoLogoPython className="skill-icon-python" />
             Python
           </li>
-          <li>
-            <DiDjango className="skill-icon" />
+          <li className="skill-item">
+            <DiDjango className="skill-icon-django" />
             Django
           </li>
         </ul>
@@ -52,3 +52,5 @@ const Skills = () => {
 }
 
 export default Skills;
+
+
