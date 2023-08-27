@@ -8,26 +8,22 @@ const Contact = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
+  
     try {
-      console.log("Form submitted");
-
       const formData = new FormData(e.target);
-      const payload = Object.fromEntries(formData.entries());
-
+      const payload = {
+        user_name: formData.get('name'),
+        user_email: formData.get('email'),
+        user_message: formData.get('message')
+      };
+  
       const serviceId = 'service_eny5cjq';
       const templateId = 'template_uhcpi79';
       const userId = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
-
-      console.log("Payload:", payload);
-
+  
       const response = await emailjs.send(serviceId, templateId, payload, userId);
-
-      console.log("Email response:", response);
-
+  
       if (response.status === 200) {
-        console.log("Email sent successfully");
-
         e.target.reset();
         setShowModal(true);
         setTimeout(() => {
@@ -40,8 +36,7 @@ const Contact = () => {
       console.error('Error sending email:', error);
     }
   };
-
-  console.log("Rendering Contact component");
+  
 
   return (
     <section className="contact">

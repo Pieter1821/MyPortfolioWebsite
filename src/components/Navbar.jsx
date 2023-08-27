@@ -36,7 +36,7 @@ export default function Navbar() {
                   key={index}
                   to={link.to}
                   className="nav-link text-gray-800 hover:text-gray-600"
-                  activeClassName="font-semibold text-gray-600"
+                  activeclassname="font-semibold text-gray-600"
                 >
                   {link.label}
                 </Link>
