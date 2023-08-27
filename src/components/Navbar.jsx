@@ -20,19 +20,17 @@ export default function Navbar() {
 
   return (
     <div className="navbar-container">
-      <nav className="md">
+      <nav className="bg-white border-gray-200 px-2 sm:px:4 py-2">
         <div className="max-w-screen-xl mx-auto px-4 md:px-8">
           <div className="flex items-center justify-between h-16">
             <div className="md:hidden">
               <button onClick={toggleMenu} className="text-gray-800 hover:text-gray-600">
-                <div className='svg-container'>
                   <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
                   </svg>
-                </div>
               </button>
             </div>
-            <div className="hidden md:flex space-x-4">
+            <div className="hidden md:flex justify-between space-x-4">
               {links.map((link, index) => (
                 <Link
                   key={index}
@@ -46,7 +44,7 @@ export default function Navbar() {
             </div>
           </div>
           {isOpen && (
-            <div className="md:hidden mt-2">
+            <div className=" mt-2">
               <ul className="flex flex-col space-y-2">
                 {links.map((link, index) => (
                   <Link
