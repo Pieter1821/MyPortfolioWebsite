@@ -7,14 +7,13 @@ import MyTODOAPP from "../assets/MyTODOAPP.jpeg";
 import LogoRecipeApp from "../assets/LogoRecipeApp.jpg";
 import interestcalculatorpage from "../assets/interestcalculatorpage.jpg";
 
-
 export function Projects() {
   const projects = [
     {
       name: "TODO APP",
       imageSrc: MyTODOAPP,
       description:
-        "My Todo App: Stay organized effortlessly with a simple, intuitive task management application for all your daily responsibilities.",
+        "TODO APP is a sleek and user-friendly task management application built with React. Stay organized effortlessly and manage your daily responsibilities with ease.",
       technologies: ["React"],
       githubUrl: "https://github.com/Pieter1821/My-Todo-App/",
       livePreviewUrl: "https://todo-appto.netlify.app/",
@@ -22,7 +21,8 @@ export function Projects() {
     {
       name: "My-Simple-Calculator",
       imageSrc: CALCULATOR,
-      description: "This is a basic calculator app built using HTML, CSS, and JavaScript",
+      description:
+        "My-Simple-Calculator is a web-based calculator app created using HTML, CSS, and JavaScript. It offers a straightforward way to perform basic calculations.",
       technologies: ["JavaScript"],
       githubUrl: "",
       livePreviewUrl: "https://mysimplecalculater.netlify.app/",
@@ -31,61 +31,48 @@ export function Projects() {
       name: "Banking-App",
       imageSrc: bankingapp,
       description:
-        "This is a simple bank account management system implemented in Python. The program allows users to make deposits and withdrawals, view their account balance, and view a transaction log.",
+        "Banking-App is a Python-based bank account management system. Users can easily make deposits, withdrawals, check balances, and view transaction logs.",
       technologies: ["Python"],
       githubUrl: "https://github.com/Pieter1821/BankingApp",
     },
-
     {
       name: "My-Recipe-App",
       imageSrc: LogoRecipeApp,
       description:
-        "This is a recipe app that allows users to search for recipes",
-        technologies: ["React"],
+        "My-Recipe-App is a React-powered recipe search application. Explore a wide variety of recipes and find your favorites with ease.",
+      technologies: ["React"],
       githubUrl: "https://github.com/Pieter1821/My-React-Recipe-App",
       livePreviewUrl: "https://yourfavoriterecipe.netlify.app/",
-    
     },
     {
       name: "Interest Calculator App",
       imageSrc: interestcalculatorpage,
       description:
-        "A simple interest calculator app that allows users to calculate the interest on a fixed deposit for yearly and monthly, also tells you more about it  ",
-      technologies: ["HTML", "SCSS", "JavaScript", "React"  ],
+        "Interest Calculator App is a web application that simplifies interest calculations for fixed deposits. It provides both yearly and monthly interest calculations along with educational insights.",
+      technologies: ["HTML", "SCSS", "JavaScript", "React"],
       githubUrl: "https://github.com/Pieter1821/FDinterest-Calculator.git",
       livePreviewUrl: "https://fdinterestcalculator.netlify.app/",
     },
-    
   ];
-     
 
   return (
     <div className="projects">
       {projects.map((project, index) => (
         <div className="project" key={index}>
-          <h3>{project.name}</h3>
           <img src={project.imageSrc} alt={project.name} />
-          <p>{project.description}</p>
-          <p>Technologies used: {project.technologies.join(", ")}</p>
-          <div className="btn-group">
-            <Link
-              to={project.githubUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn"
-            >
-              <FaGithub /> View Repository
-            </Link>
-            {project.livePreviewUrl && (
-              <Link
-                to={project.livePreviewUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn"
-              >
-                <FaExternalLinkAlt /> View Live Preview
-              </Link>
-            )}
+          <div className="project-info">
+            <h3>{project.name}</h3>
+            <p>{project.description}</p>
+            <div className="project-links">
+              <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
+                <FaGithub /> GitHub
+              </a>
+              {project.livePreviewUrl && (
+                <a href={project.livePreviewUrl} target="_blank" rel="noopener noreferrer">
+                  <FaExternalLinkAlt /> Live Preview
+                </a>
+              )}
+            </div>
           </div>
         </div>
       ))}
@@ -93,4 +80,5 @@ export function Projects() {
   );
 }
 
-export default Projects;
+
+ export default Projects;
