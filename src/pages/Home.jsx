@@ -73,7 +73,7 @@ const Home = () => {
           View Projects
         </Link>
         <a
-          href="https://www.dropbox.com/s/tv3mc3105lesggl/Pieter_Deane_CV.pdf?dl=0"
+          href="https://www.dropbox.com/scl/fi/8y2noskn25crz67hhg1eu/PieterDeane_CV.pdf?rlkey=q8huiblqosieg15shshfa6pws&dl=0"
           target="_blank"
           rel="noopener noreferrer"
           className="btn-resume"
