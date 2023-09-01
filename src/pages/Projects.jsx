@@ -5,6 +5,7 @@ import bankingapp from "../assets/bankingapp.png";
 import CALCULATOR from "../assets/CALCULATOR.jpeg";
 import MyTODOAPP from "../assets/MyTODOAPP.jpeg";
 import LogoRecipeApp from "../assets/LogoRecipeApp.jpg";
+import interestcalculatorpage from "../assets/interestcalculatorpage.jpg";
 
 
 export function Projects() {
@@ -34,6 +35,7 @@ export function Projects() {
       technologies: ["Python"],
       githubUrl: "https://github.com/Pieter1821/BankingApp",
     },
+
     {
       name: "My-Recipe-App",
       imageSrc: LogoRecipeApp,
@@ -43,6 +45,15 @@ export function Projects() {
       githubUrl: "https://github.com/Pieter1821/My-React-Recipe-App",
       livePreviewUrl: "https://yourfavoriterecipe.netlify.app/",
     
+    },
+    {
+      name: "Interest Calculator App",
+      imageSrc: interestcalculatorpage,
+      description:
+        "A simple interest calculator app that allows users to calculate the interest on a fixed deposit for yearly and monthly, also tells you more about it  ",
+      technologies: ["HTML", "SCSS", "JavaScript", "React"  ],
+      githubUrl: "https://github.com/Pieter1821/FDinterest-Calculator.git",
+      livePreviewUrl: "https://fdinterestcalculator.netlify.app/",
     },
     
   ];
