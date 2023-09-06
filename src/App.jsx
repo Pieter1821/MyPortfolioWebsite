@@ -23,7 +23,7 @@ export default function App() {
           <Suspense
             fallback={
               <div className="loading" aria-label="Loading">
-                <h1>Loading...</h1>
+                <h1 >Loading...</h1>
                 <Spinner />
               </div>
             }

@@ -1,16 +1,27 @@
 :root {
-    --main-color: #3498db;       /* Example: a blue color */
-    --secondary-color: #c792dc; /* Example: a purple color */
-    --accent-color: #bdc3c7;    /* Example: a light gray color */
+    --main-color: #3498db;      
+    --secondary-color: #c792dc;
+    --accent-color: #bdc3c7;    
     --main-gradient: linear-gradient(90deg, #3498db, #9b59b6); 
-  --accent-gradient: radial-gradient(circle, #bdc3c7, #3498db); /* Example radial gradient from light gray to blue */
+  --accent-gradient: radial-gradient(circle, #bdc3c7, #3498db); 
 
-  /*Primary Color (60%): Blue (e.g., #3498db)
-Secondary Color (30%): Green (e.g., #27ae60)
-Accent Color (10%): Orange (e.g., #e67e22)
-*/
-  }
+}
+
 *{
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Roboto Slab';
+    margin: auto;
+    box-sizing: border-box;
+
+
+}
+
+
+.loading {
+    display:flex;
+    justify-content: center;
+    color:lime;
+    font-size:50px;
+    margin-top: 50px;
+   
 
 }

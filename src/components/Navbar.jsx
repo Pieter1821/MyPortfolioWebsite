@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { VscChromeClose } from 'react-icons/vsc'; // Import the VscChromeClose icon
-import { VscMenu } from 'react-icons/vsc'; // Import the VscMenu icon
+import { VscChromeClose } from 'react-icons/vsc';
+import { VscMenu } from 'react-icons/vsc'; 
 
 import '../styles/Navbar.css';
 
@@ -23,14 +23,14 @@ export default function Navbar() {
   return (
     <div className="navbar-container bg-gray-200">
       <nav className="px-2 sm:px:4 py-2 w-full">
-        <div className="max-w-screen-xl mx-auto px-4 md:px-8">
-          <div className="flex items-center justify-between h-16">
-            <div className="md:hidden">
-              <button onClick={toggleMenu} className="text-white-200 hover:text-gray-6">
+        <div className="max-w-screen-xl mx-auto px-4 md:px-8  ">
+          <div className="flex items-center justify-between h-16 ">
+            <div className="md:hidd" >
+              <button onClick={toggleMenu} className="text-white-200 hover:text-gray-6  ">
                 {isOpen ? (
-                  <VscChromeClose className="h-6 w-6" /> // Use close icon when menu is open
+                  <VscChromeClose className=" absolute left-6 h-6 w-6 " /> 
                 ) : (
-                  <VscMenu className="h-6 w-6" /> // Use menu icon when menu is closed
+                  <VscMenu className="h-6 w-6 absolute left-6 " /> 
                 )}
               </button>
             </div>
@@ -48,7 +48,7 @@ export default function Navbar() {
             </div>
           </div>
           {isOpen && (
-            <div className="mt-2 flex justify-center">
+            <div className="mt-2 flex justify-center first-letter" >
               <ul className="flex flex-col space-y-2">
                 {links.map((link, index) => (
                   <Link
