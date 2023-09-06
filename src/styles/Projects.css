@@ -1,18 +1,19 @@
-.projects {
+.projects-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
+    background: #3498db;
   }
   
   .project {
     width: 300px;
     margin: 20px;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
+    padding: 30px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: box-shadow 0.3s ease;
+    background-color: var(--main-color);
+    color: white;
   }
   
   .project:hover {

@@ -1,4 +1,3 @@
-import React from 'react';
 import '../styles/Footer.css';
 import linkedinLogo from '../assets/linkedin-logo.png';
 import twitterLogo from '../assets/twitter-logo.png';

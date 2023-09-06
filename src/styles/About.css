@@ -1,16 +1,15 @@
-/* Styling for the container */
-.about {
-  max-width: 600px;
+
+.about-container {
+  width: auto;
   margin: 0 auto;
   padding: 40px;
-  background-color: #f7f7f7;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle box shadow */
-  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out; /* Added transitions */
+  background-color: var(--main-color); 
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out; 
   animation: fadeIn 0.5s ease-in-out;
+  color: white;
 }
 
-/* Keyframes animation for fading in */
+
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -22,15 +21,16 @@
   }
 }
 
-/* Styling for the main heading */
+
 h1 {
-  font-size: 28px; /* Increased font size */
-  margin-bottom: 24px; /* Increased margin */
+  font-size: 28px; 
+  margin-bottom: 24px; 
   color: #333;
   animation: slideIn 0.5s ease-in-out;
+ text-decoration:underline;
 }
 
-/* Keyframes animation for sliding in */
+
 @keyframes slideIn {
   0% {
     opacity: 0;
@@ -42,22 +42,48 @@ h1 {
   }
 }
 
-/* Styling for paragraphs */
+
 p {
-  font-size: 18px; /* Increased font size */
-  line-height: 1.6; /* Slightly adjusted line height */
-  margin-bottom: 20px; /* Increased margin */
+  font-size: 18px; 
+  line-height: 1.6; 
+  margin-bottom: 20px; 
   animation: fadeIn 0.5s ease-in-out;
 }
 
-/* Styling for bold text */
+
 strong {
   font-weight: bold;
   color: #555;
-  transition: color 0.5s ease-in-out; /* Increased transition duration */
+  transition: color 0.5s ease-in-out; 
 }
 
-/* Hover effect for bold text */
+
 strong:hover {
   color: #f44336;
 }
+
+.btn-projects,
+.btn-resume {
+  border: solid 1px rgb(67, 64, 64);
+  background-color: transparent;
+  padding: 10px;
+  border-radius: 4px;
+  color: #333;
+  font-size: 12px;
+  font-family:  sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+   margin-left: 20px;
+}
+.buttons-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.btn-projects:hover,
+.btn-resume:hover {
+  background-color: var(--accent-color);
+}
+

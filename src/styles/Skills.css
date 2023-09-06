@@ -1,75 +1,104 @@
+/* Container styling */
 .skills-container {
   text-align: center;
-  padding: 4rem;
-  background-color: #f9f9f9;
+  padding: 2rem; /* Reduce padding for small devices */
+  background-color: #3498db;
   border: 1px solid #ddd;
   border-radius: 8px;
 }
 
 .skills-heading {
   color: #333;
-  font-size: 3rem;
-  margin-bottom: 2rem;
+  font-size: 2rem; /* Smaller font size for small devices */
+  margin-bottom: 1rem; /* Reduce margin for small devices */
   text-transform: uppercase;
+  text-decoration: underline;
 }
 
 .skills-section {
-  margin-bottom: 4rem;
+  margin-bottom: 2rem; /* Reduce margin for small devices */
 }
 
 .skills-subheading {
   color: #444;
-  font-size: 1.8rem;
-  margin-bottom: 1.5rem;
+  font-size: 1.5rem; /* Smaller font size for small devices */
+  margin-bottom: 1rem; /* Reduce margin for small devices */
 }
 
-.skills-list {
-  list-style: none;
-  padding: 0;
-}
-
-.skill-item {
+/* Skill Card Styling */
+.skills-card {
   display: flex;
+  flex-wrap: wrap; /* Allow cards to wrap on small devices */
+  justify-content: center;
   align-items: center;
-  margin-bottom: 1.5rem;
-  font-size: 1.4rem;
-  padding: 0.5rem;
-  border-radius: 4px;
-  transition: box-shadow 0.3s ease;
+  gap: 1rem;
 }
 
-.skill-item:hover {
+.skill-card {
+  flex: 1; /* Take full width on small devices */
+  max-width: 300px; /* Limit card width for readability */
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 1rem;
+}
+
+.skill-card:hover {
   transform: scale(1.05);
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-  cursor: pointer;
+}
+
+/* Icon Styling */
+.skill-icon {
+  font-size: 3rem; /* Adjust the size of icons */
 }
 
 /* Front-end Icons */
 .skill-icon-html {
-  color: #f06529;
+  color: #E44D26; /* HTML Icon Color */
 }
 
 .skill-icon-css {
-  color: #2965f1;
+  color: #2965f1; /* CSS Icon Color */
 }
 
 .skill-icon-js {
-  color: #f5c542;
+  color: #F0DB4F; /* JavaScript Icon Color */
 }
 
 .skill-icon-react {
-  color: #67a4d3;
+  color: #61DAFB; /* React Icon Color */
 }
 
 /* Back-end Icons */
 .skill-icon-nodejs {
-  color: #68a063;
+  color: #339933; /* Node.js Icon Color */
 }
 
 .skill-icon-python {
-  color: #3c72a9;
+  color: #3776AB; /* Python Icon Color */
 }
 
 .skill-icon-django {
-  color: #0b402a;
+  color: #092E20; /* Django Icon Color */
+}
+
+/* Media Query for Small Devices */
+@media (max-width: 768px) {
+  .skills-container {
+    padding: 1rem; /* Further reduce padding for very small devices */
+  }
+
+  .skills-heading {
+    font-size: 1.5rem; /* Adjust font size for very small devices */
+  }
+
+  .skills-subheading {
+    font-size: 1.2rem; /* Adjust font size for very small devices */
+  }
 }

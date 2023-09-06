@@ -19,15 +19,6 @@ export function Projects() {
       livePreviewUrl: "https://todo-appto.netlify.app/",
     },
     {
-      name: "My-Simple-Calculator",
-      imageSrc: CALCULATOR,
-      description:
-        "My-Simple-Calculator is a web-based calculator app created using HTML, CSS, and JavaScript. It offers a straightforward way to perform basic calculations.",
-      technologies: ["JavaScript"],
-      githubUrl: "",
-      livePreviewUrl: "https://mysimplecalculater.netlify.app/",
-    },
-    {
       name: "Banking-App",
       imageSrc: bankingapp,
       description:
@@ -56,7 +47,7 @@ export function Projects() {
   ];
 
   return (
-    <div className="projects">
+    <div className="projects-container">
       {projects.map((project, index) => (
         <div className="project" key={index}>
           <img src={project.imageSrc} alt={project.name} />

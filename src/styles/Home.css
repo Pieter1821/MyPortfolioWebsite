@@ -27,24 +27,6 @@ p {
   line-height: 1.5;
 }
 
-.btn-projects,
-.btn-resume {
-  border: solid 1px rgb(67, 64, 64);
-  background-color: yellow;
-  padding: 15px;
-  border-radius: 4px;
-  color: #333;
-  font-size: 16px;
-  font-family: "Montserrat", sans-serif;
-  text-transform: uppercase;
-  text-decoration: none;
-  transition: background-color 0.3s ease;
-}
-
-.btn-projects:hover,
-.btn-resume:hover {
-  background-color: #ffd700;
-}
 
 .illustration {
   display: flex;
@@ -54,8 +36,4 @@ p {
 }
 
 
-.buttons-container {
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
-}
+

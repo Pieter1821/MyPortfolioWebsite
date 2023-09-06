@@ -1,8 +1,20 @@
 import "../styles/About.css"
+import { motion } from 'framer-motion';
+import { Link } from "react-router-dom";
 
 export function About() {
+  const buttonVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        duration: 0.5,
+        delay: 1.5,
+      },
+    }
+  }
   return (
-    <div className="about">
+    <div className="about-container">
       <h1>About me</h1>
 
       <p>
@@ -21,6 +33,26 @@ export function About() {
         <p>
           Thank you for taking the time to visit my portfolio. I hope you enjoy it!
         </p>
+
+        <motion.div
+        className="buttons-container"
+        variants={buttonVariants}
+        initial="hidden"
+        animate="visible"
+        transition={{ duration: 6 }}
+      >
+        <Link to="/Projects" className="btn-projects">
+          View Projects
+        </Link>
+        <a
+          href="https://www.dropbox.com/scl/fi/8y2noskn25crz67hhg1eu/PieterDeane_CV.pdf?rlkey=q8huiblqosieg15shshfa6pws&dl=0"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="btn-resume"
+        >
+          View Resume
+        </a>
+      </motion.div>
 
 
       
