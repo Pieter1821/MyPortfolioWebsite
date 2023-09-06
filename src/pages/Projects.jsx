@@ -1,48 +1,46 @@
-import { Link } from "react-router-dom";
-import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
-import "../styles/projects.css";
-import bankingapp from "../assets/bankingapp.png";
-import CALCULATOR from "../assets/CALCULATOR.jpeg";
-import MyTODOAPP from "../assets/MyTODOAPP.jpeg";
-import LogoRecipeApp from "../assets/LogoRecipeApp.jpg";
-import interestcalculatorpage from "../assets/interestcalculatorpage.jpg";
+import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
+import '../styles/projects.css';
+import bankingapp from '../assets/bankingapp.png';
+import MyTODOAPP from '../assets/MyTODOAPP.jpeg';
+import LogoRecipeApp from '../assets/LogoRecipeApp.jpg';
+import interestcalculatorpage from '../assets/interestcalculatorpage.jpg';
 
 export function Projects() {
   const projects = [
     {
-      name: "TODO APP",
+      name: 'TODO APP',
       imageSrc: MyTODOAPP,
       description:
-        "TODO APP is a sleek and user-friendly task management application built with React. Stay organized effortlessly and manage your daily responsibilities with ease.",
-      technologies: ["React"],
-      githubUrl: "https://github.com/Pieter1821/My-Todo-App/",
-      livePreviewUrl: "https://todo-appto.netlify.app/",
+        'TODO APP is a sleek and user-friendly task management application built with React. Stay organized effortlessly and manage your daily responsibilities with ease.',
+      technologies: ['React'],
+      githubUrl: 'https://github.com/Pieter1821/My-Todo-App/',
+      livePreviewUrl: 'https://todo-appto.netlify.app/',
     },
     {
-      name: "Banking-App",
+      name: 'Banking-App',
       imageSrc: bankingapp,
       description:
-        "Banking-App is a Python-based bank account management system. Users can easily make deposits, withdrawals, check balances, and view transaction logs.",
-      technologies: ["Python"],
-      githubUrl: "https://github.com/Pieter1821/BankingApp",
+        'Banking-App is a Python-based bank account management system. Users can easily make deposits, withdrawals, check balances, and view transaction logs.',
+      technologies: ['Python'],
+      githubUrl: 'https://github.com/Pieter1821/BankingApp',
     },
     {
-      name: "My-Recipe-App",
+      name: 'My-Recipe-App',
       imageSrc: LogoRecipeApp,
       description:
-        "My-Recipe-App is a React-powered recipe search application. Explore a wide variety of recipes and find your favorites with ease.",
-      technologies: ["React"],
-      githubUrl: "https://github.com/Pieter1821/My-React-Recipe-App",
-      livePreviewUrl: "https://yourfavoriterecipe.netlify.app/",
+        'My-Recipe-App is a React-powered recipe search application. Explore a wide variety of recipes and find your favorites with ease.',
+      technologies: ['React'],
+      githubUrl: 'https://github.com/Pieter1821/My-React-Recipe-App',
+      livePreviewUrl: 'https://yourfavoriterecipe.netlify.app/',
     },
     {
-      name: "Interest Calculator App",
+      name: 'Interest Calculator App',
       imageSrc: interestcalculatorpage,
       description:
-        "Interest Calculator App is a web application that simplifies interest calculations for fixed deposits. It provides both yearly and monthly interest calculations along with educational insights.",
-      technologies: ["HTML", "SCSS", "JavaScript", "React"],
-      githubUrl: "https://github.com/Pieter1821/FDinterest-Calculator.git",
-      livePreviewUrl: "https://fdinterestcalculator.netlify.app/",
+        'Interest Calculator App is a web application that simplifies interest calculations for fixed deposits. It provides both yearly and monthly interest calculations along with educational insights.',
+      technologies: ['HTML', 'SCSS', 'JavaScript', 'React'],
+      githubUrl: 'https://github.com/Pieter1821/FDinterest-Calculator.git',
+      livePreviewUrl: 'https://fdinterestcalculator.netlify.app/',
     },
   ];
 
@@ -71,5 +69,4 @@ export function Projects() {
   );
 }
 
-
- export default Projects;
+export default Projects;

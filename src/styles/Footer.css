@@ -40,7 +40,7 @@
 }
 
 .footer__social-media a:hover {
-  transform: scale(1.2); /* Increase the size of the social media icons on hover */
+  transform: scale(1.2);
 }
 
 .footer__social-media-icon {

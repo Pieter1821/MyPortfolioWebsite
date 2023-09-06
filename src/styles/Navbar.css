@@ -1,15 +1,8 @@
-.navbar-container  {
-    display: flex;
-    justify-content: space-around;
-    
-   
-  }
-  
-  .navbar-container nav {
-    padding: 1rem 0;
-  }
+.navbar-container {
+  display: flex;
+  justify-content: space-around;
+}
 
-
-
-  
-  
+.navbar-container nav {
+  padding: 1rem 0;
+}

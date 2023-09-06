@@ -5,6 +5,7 @@
     flex-wrap: wrap;
     margin-top: -100px;
     opacity: 0.9;
+    background: lightgray;
   }
 
   .header-container{

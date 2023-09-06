@@ -1,22 +1,13 @@
-
-
-
 import '../styles/home.css';
 
-import Hero from "../components/Hero";
-import Interests from '../components/Interests';
+import Hero from '../components/Hero';
 
 const Home = () => {
-  return(
+  return (
     <>
-<Hero/>
+      <Hero />
     </>
-  )
-}
-  
-
-  
-
-  
+  );
+};
 
 export default Home;

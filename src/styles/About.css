@@ -1,14 +1,12 @@
-
 .about-container {
   width: auto;
   margin: 0 auto;
   padding: 40px;
-  background-color: var(--main-color); 
-  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out; 
+  background-color: var(--main-color);
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
   animation: fadeIn 0.5s ease-in-out;
   color: white;
 }
-
 
 @keyframes fadeIn {
   0% {
@@ -21,15 +19,13 @@
   }
 }
 
-
 h1 {
-  font-size: 28px; 
-  margin-bottom: 24px; 
+  font-size: 28px;
+  margin-bottom: 24px;
   color: #333;
   animation: slideIn 0.5s ease-in-out;
- text-decoration:underline;
+  text-decoration: underline;
 }
-
 
 @keyframes slideIn {
   0% {
@@ -42,21 +38,18 @@ h1 {
   }
 }
 
-
 p {
-  font-size: 18px; 
-  line-height: 1.6; 
-  margin-bottom: 20px; 
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 20px;
   animation: fadeIn 0.5s ease-in-out;
 }
-
 
 strong {
   font-weight: bold;
   color: #555;
-  transition: color 0.5s ease-in-out; 
+  transition: color 0.5s ease-in-out;
 }
-
 
 strong:hover {
   color: #f44336;
@@ -70,11 +63,11 @@ strong:hover {
   border-radius: 4px;
   color: #333;
   font-size: 12px;
-  font-family:  sans-serif;
+  font-family: sans-serif;
   text-transform: uppercase;
   text-decoration: none;
   transition: background-color 0.3s ease;
-   margin-left: 20px;
+  margin-left: 20px;
 }
 .buttons-container {
   display: flex;
@@ -86,4 +79,3 @@ strong:hover {
 .btn-resume:hover {
   background-color: var(--accent-color);
 }
-

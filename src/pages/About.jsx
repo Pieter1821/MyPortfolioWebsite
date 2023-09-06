@@ -1,6 +1,8 @@
-import "../styles/About.css"
+import React from 'react';
 import { motion } from 'framer-motion';
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom';
+import '../styles/About.css';
+
 
 export function About() {
   const buttonVariants = {
@@ -11,30 +13,37 @@ export function About() {
         duration: 0.5,
         delay: 1.5,
       },
-    }
-  }
+    },
+  };
+
   return (
     <div className="about-container">
       <h1>About me</h1>
 
       <p>
-        Welcome to my Portfolio. My name is <strong>Pieter Deane</strong> and I am a <strong>self-taught developer</strong> with a passion for building websites and applications.Although i don't have a formal	computer science,
-        i have spent countless hours learning and practicing various programming languages and tools.
+        Welcome to my Portfolio. My name is <strong>Pieter Deane</strong> and I am a{' '}
+        <strong>self-taught developer</strong> with a passion for building websites and applications. Although I don't
+        have a formal computer science background, I have spent countless hours learning and practicing various
+        programming languages and tools.
+      </p>
 
-        </p>
-        <p>My  Journey into the world of development started with a simple curiosity about how websites are built.
-        from there , I delved into HTML and CSS, and  eventually Javascript and frameworks like React. While my journey hasn't been easy, I have learned a lot along the way and I am excited to see where it takes me next.i am proud of the progress i've made and the projects I've built so far, and I can't wait to see what I can accomplish in the future.	
-        </p>
-        <p>
-          Though my portfolio, i hope to showcase my skills and demonstrate my ability to create beautiful,
-          and functional websites and applications. I am eager to collaborate with others  and continue learning from experienced developers,while also sharing my own knowledge with those who are just starting out.
-        </p>
+      <p>
+        My journey into the world of development started with a simple curiosity about how websites are built. From
+        there, I delved into HTML and CSS, and eventually JavaScript and frameworks like React. While my journey hasn't
+        been easy, I have learned a lot along the way and I am excited to see where it takes me next. I am proud of the
+        progress I've made and the projects I've built so far, and I can't wait to see what I can accomplish in the
+        future.
+      </p>
 
-        <p>
-          Thank you for taking the time to visit my portfolio. I hope you enjoy it!
-        </p>
+      <p>
+        Through my portfolio, I hope to showcase my skills and demonstrate my ability to create beautiful, and
+        functional websites and applications. I am eager to collaborate with others and continue learning from
+        experienced developers, while also sharing my own knowledge with those who are just starting out.
+      </p>
 
-        <motion.div
+      <p>Thank you for taking the time to visit my portfolio. I hope you enjoy it!</p>
+
+      <motion.div
         className="buttons-container"
         variants={buttonVariants}
         initial="hidden"
@@ -53,9 +62,6 @@ export function About() {
           View Resume
         </a>
       </motion.div>
-
-
-      
     </div>
   );
 }

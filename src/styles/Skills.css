@@ -1,7 +1,7 @@
-/* Container styling */
+
 .skills-container {
   text-align: center;
-  padding: 2rem; /* Reduce padding for small devices */
+  padding: 2rem; 
   background-color: #3498db;
   border: 1px solid #ddd;
   border-radius: 8px;
@@ -9,34 +9,34 @@
 
 .skills-heading {
   color: #333;
-  font-size: 2rem; /* Smaller font size for small devices */
-  margin-bottom: 1rem; /* Reduce margin for small devices */
+  font-size: 2rem; 
+  margin-bottom: 1rem; 
   text-transform: uppercase;
   text-decoration: underline;
 }
 
 .skills-section {
-  margin-bottom: 2rem; /* Reduce margin for small devices */
+  margin-bottom: 2rem; 
 }
 
 .skills-subheading {
   color: #444;
-  font-size: 1.5rem; /* Smaller font size for small devices */
-  margin-bottom: 1rem; /* Reduce margin for small devices */
+  font-size: 1.5rem; 
+  margin-bottom: 1rem; 
 }
 
-/* Skill Card Styling */
+
 .skills-card {
   display: flex;
-  flex-wrap: wrap; /* Allow cards to wrap on small devices */
+  flex-wrap: wrap; 
   justify-content: center;
   align-items: center;
   gap: 1rem;
 }
 
 .skill-card {
-  flex: 1; /* Take full width on small devices */
-  max-width: 300px; /* Limit card width for readability */
+  flex: 1; 
+  max-width: 300px; 
   background-color: #ffffff;
   border: 1px solid #ddd;
   border-radius: 8px;
@@ -53,12 +53,12 @@
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-/* Icon Styling */
+
 .skill-icon {
-  font-size: 3rem; /* Adjust the size of icons */
+  font-size: 3rem; 
 }
 
-/* Front-end Icons */
+
 .skill-icon-html {
   color: #E44D26; /* HTML Icon Color */
 }
@@ -75,7 +75,7 @@
   color: #61DAFB; /* React Icon Color */
 }
 
-/* Back-end Icons */
+
 .skill-icon-nodejs {
   color: #339933; /* Node.js Icon Color */
 }
@@ -88,17 +88,17 @@
   color: #092E20; /* Django Icon Color */
 }
 
-/* Media Query for Small Devices */
+
 @media (max-width: 768px) {
   .skills-container {
-    padding: 1rem; /* Further reduce padding for very small devices */
+    padding: 1rem; 
   }
 
   .skills-heading {
-    font-size: 1.5rem; /* Adjust font size for very small devices */
+    font-size: 1.5rem; 
   }
 
   .skills-subheading {
-    font-size: 1.2rem; /* Adjust font size for very small devices */
+    font-size: 1.2rem; 
   }
 }

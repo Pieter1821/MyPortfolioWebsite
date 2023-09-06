@@ -4,11 +4,10 @@ import '../styles/interests.css';
 
 const Interests = () => {
   return (
-
     <section className="interests-container">
-    <div className='header-container'>
-      <h1>Interests</h1>
-    </div>
+      <div className="header-container">
+        <h1>Interests</h1>
+      </div>
       <div className="interests-card">
         <div className="activity coffee">
           <FaCoffee aria-label="Coffee icon" />
