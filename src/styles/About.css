@@ -1,6 +1,7 @@
+
+
 .about-container {
   width: 100%;
-  max-width: 800px;
   margin: 0 auto;
   padding: 40px;
   background-color: var(--main-color);
@@ -25,6 +26,7 @@ p {
   line-height: 1.6;
   margin-bottom: 20px;
   animation: fadeIn 0.5s ease-in-out;
+  text-align: justify; 
 }
 
 strong {
@@ -36,6 +38,19 @@ strong {
 strong:hover {
   color: #f44336;
 }
+
+.personalpic {
+  display: flex;
+  justify-content: center;
+  max-width: 100%;
+  max-height: 300px;
+  width: auto;
+  height: auto;
+  border-radius: 50%;
+  opacity: 0.9;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+}
+
 
 .buttons-container {
   display: flex;
@@ -58,20 +73,20 @@ strong:hover {
   margin: 0 15px;
 }
 
+
+@media (max-width: 768px) {
+  .buttons-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn-projects,
+  .btn-resume {
+    margin: 10px 0;
+  }
+}
+
 .btn-projects:hover,
 .btn-resume:hover {
   background-color: var(--accent-color);
 }
-
-.personalpic {
-  display: flex;
-  justify-content: center;
-  max-width: 100%;
-  max-height: 300px; 
-  width: auto;
-  height: auto;
-  border-radius: 50%;
-  opacity: 0.9;
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
-}
-

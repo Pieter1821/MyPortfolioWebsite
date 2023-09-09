@@ -21,11 +21,11 @@ export default function Navbar() {
   };
 
   return (
-    <div className="navbar-container bg-gray-200">
+    <div className="navbar-container bg-gray-200 flex justify-center">
       <nav className="px-2 sm:px-4 py-2 w-full">
         <div className="max-w-screen-xl mx-auto px-4 md:px-8">
           <div className="flex center justify-between h-20">
-            <div className="md:hidden">
+            <div className="md:hidden flex justify-center">
               <button
                 onClick={toggleMenu}
                 className="text-gray-800 hover:text-gray-600"
@@ -39,7 +39,7 @@ export default function Navbar() {
               </button>
             </div>
 
-            <div className="hidden md:flex justify-between space-x-4">
+            <div className="hidden md:flex justify-between space-x-10">
               {links.map((link, index) => (
                 <Link
                   key={index}
@@ -55,13 +55,13 @@ export default function Navbar() {
 
           {isOpen && (
             <div className="md:hidden mt-2">
-              <ul className="flex flex-col items-center space-y-2"> 
+              <ul className="flex flex-col items-center space-y-2">
                 {links.map((link, index) => (
                   <Link
                     key={index}
                     to={link.to}
                     className="nav-link text-gray-800 hover:text-blue-600"
-                    activeClassName="font-semibold text-blue-600"
+                    activeclassname="font-semibold text-blue-600"
                   >
                     {link.label}
                   </Link>

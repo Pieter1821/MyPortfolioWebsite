@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: center;
   padding: 40px;
-  background-color: #3498db;
+  background-color: var(--secondary-color);
   color: white;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
