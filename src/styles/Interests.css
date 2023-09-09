@@ -1,41 +1,58 @@
-.interests-container {
-    display: flex;
-    justify-content: center;
-    gap: 50px;
-    flex-wrap: wrap;
-    margin-top: -100px;
-    opacity: 0.9;
-    background: lightgray;
-  }
 
-  .header-container{
-    display: block;
-  }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.interests-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  margin-top: -100px;
   
-  .interest-card {
-    color: #fff;
-    border-radius: 8px;
-    padding: 10px;
-    text-align: center;
-    width: 200px; 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    transition: transform 0.3s, box-shadow 0.3s;
-  }
-  
-  .activity {
-    font-size: 30px;
-    margin-bottom: 10px;
-  }
-  
-  .interest-card p {
-    font-size: 12px;
-  }
-  
-  .interest-card:hover {
-    transform: scale(1.05);
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
-  }
-  
- 
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  background-color: #333; 
+  color: white;
+  padding: 10px 20px; 
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+
+.interest-card {
+  color: #333;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  background-color: white;
+}
+
+.activity {
+  font-size: 18px; 
+  margin-bottom: 10px;
+  color: #333; 
+}
+
+.interest-card p {
+  font-size: 14px;
+}
+
+
+.interest-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}

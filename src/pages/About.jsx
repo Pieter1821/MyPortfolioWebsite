@@ -2,7 +2,9 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import '../styles/About.css';
-
+import personalpic from '../assets/personalpic.jpeg';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faRocket, faLaptopCode, faHandshake, faFileAlt } from '@fortawesome/free-solid-svg-icons';
 
 export function About() {
   const buttonVariants = {
@@ -18,30 +20,24 @@ export function About() {
 
   return (
     <div className="about-container">
-      <h1>About me</h1>
+      <h1>About Me <FontAwesomeIcon icon={faRocket} /></h1>
+      <img src={personalpic} className="personalpic" alt="Photo of myself" />
 
       <p>
-        Welcome to my Portfolio. My name is <strong>Pieter Deane</strong> and I am a{' '}
-        <strong>self-taught developer</strong> with a passion for building websites and applications. Although I don't
-        have a formal computer science background, I have spent countless hours learning and practicing various
-        programming languages and tools.
+        Welcome to my world! I'm <strong>Pieter Deane</strong>, a <strong>self-taught developer</strong> deeply passionate about crafting websites and applications. <FontAwesomeIcon icon={faLaptopCode} /> Without a formal computer science background, I've embarked on a journey of relentless learning, immersing myself in diverse programming languages and tools.
       </p>
 
       <p>
-        My journey into the world of development started with a simple curiosity about how websites are built. From
-        there, I delved into HTML and CSS, and eventually JavaScript and frameworks like React. While my journey hasn't
-        been easy, I have learned a lot along the way and I am excited to see where it takes me next. I am proud of the
-        progress I've made and the projects I've built so far, and I can't wait to see what I can accomplish in the
-        future.
+        My adventure in the world of development sparked from a simple curiosity about how websites come to life. I began with HTML and CSS, and soon ventured into the realms of JavaScript and frameworks like React. <FontAwesomeIcon icon={faHandshake} /> While my path has been challenging, it's been an incredible learning experience, and I'm eagerly anticipating the future's uncharted territory. I take immense pride in my progress and the projects I've brought to life, and I'm excited to witness the milestones I'll reach in the coming years. <FontAwesomeIcon icon={faFileAlt} />
       </p>
 
       <p>
-        Through my portfolio, I hope to showcase my skills and demonstrate my ability to create beautiful, and
-        functional websites and applications. I am eager to collaborate with others and continue learning from
-        experienced developers, while also sharing my own knowledge with those who are just starting out.
+        My portfolio serves as a testament to my skills, showcasing my ability to create not only visually appealing but also highly functional websites and applications. <FontAwesomeIcon icon={faLaptopCode} /> I'm enthusiastic about collaborating with fellow developers, continuously learning from experienced peers, and sharing my knowledge with newcomers to the field. <FontAwesomeIcon icon={faHandshake} />
       </p>
 
-      <p>Thank you for taking the time to visit my portfolio. I hope you enjoy it!</p>
+      <p>
+        Thank you for visiting my portfolio—I hope you find it inspiring and informative! <FontAwesomeIcon icon={faRocket} />
+      </p>
 
       <motion.div
         className="buttons-container"
@@ -51,7 +47,7 @@ export function About() {
         transition={{ duration: 6 }}
       >
         <Link to="/Projects" className="btn-projects">
-          View Projects
+          Explore My Projects <FontAwesomeIcon icon={faLaptopCode} />
         </Link>
         <a
           href="https://www.dropbox.com/scl/fi/8y2noskn25crz67hhg1eu/PieterDeane_CV.pdf?rlkey=q8huiblqosieg15shshfa6pws&dl=0"
@@ -59,7 +55,7 @@ export function About() {
           rel="noopener noreferrer"
           className="btn-resume"
         >
-          View Resume
+          View My Resume <FontAwesomeIcon icon={faFileAlt} />
         </a>
       </motion.div>
     </div>

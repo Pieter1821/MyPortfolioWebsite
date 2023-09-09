@@ -48,7 +48,7 @@ export function Projects() {
     <div className="projects-container">
       {projects.map((project, index) => (
         <div className="project" key={index}>
-          <img src={project.imageSrc} alt={project.name} />
+          <img src={project.imageSrc} loading="lazy" alt={project.name} />
           <div className="project-info">
             <h3>{project.name}</h3>
             <p>{project.description}</p>

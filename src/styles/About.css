@@ -1,45 +1,27 @@
 .about-container {
-  width: auto;
+  width: 100%;
+  max-width: 800px;
   margin: 0 auto;
   padding: 40px;
   background-color: var(--main-color);
   transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
   animation: fadeIn 0.5s ease-in-out;
   color: white;
-}
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-    transform: translateY(-20px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
 }
 
 h1 {
-  font-size: 28px;
+  font-size: 32px;
   margin-bottom: 24px;
-  color: #333;
+  color: white;
   animation: slideIn 0.5s ease-in-out;
   text-decoration: underline;
 }
 
-@keyframes slideIn {
-  0% {
-    opacity: 0;
-    transform: translateX(-20px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
 p {
-  font-size: 18px;
+  font-size: 20px;
   line-height: 1.6;
   margin-bottom: 20px;
   animation: fadeIn 0.5s ease-in-out;
@@ -48,34 +30,48 @@ p {
 strong {
   font-weight: bold;
   color: #555;
-  transition: color 0.5s ease-in-out;
+  transition: color 0.3s ease-in-out;
 }
 
 strong:hover {
   color: #f44336;
 }
 
-.btn-projects,
-.btn-resume {
-  border: solid 1px rgb(67, 64, 64);
-  background-color: transparent;
-  padding: 10px;
-  border-radius: 4px;
-  color: #333;
-  font-size: 12px;
-  font-family: sans-serif;
-  text-transform: uppercase;
-  text-decoration: none;
-  transition: background-color 0.3s ease;
-  margin-left: 20px;
-}
 .buttons-container {
   display: flex;
   justify-content: center;
   margin-top: 20px;
 }
 
+.btn-projects,
+.btn-resume {
+  border: solid 1px rgb(67, 64, 64);
+  background-color: transparent;
+  padding: 12px 24px;
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  margin: 0 15px;
+}
+
 .btn-projects:hover,
 .btn-resume:hover {
   background-color: var(--accent-color);
 }
+
+.personalpic {
+  display: flex;
+  justify-content: center;
+  max-width: 100%;
+  max-height: 300px; 
+  width: auto;
+  height: auto;
+  border-radius: 50%;
+  opacity: 0.9;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+}
+

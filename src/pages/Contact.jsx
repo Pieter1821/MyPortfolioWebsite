@@ -39,7 +39,7 @@ const Contact = () => {
   
 
   return (
-    <section className="contact-container">
+    <div className="contact-container">
       <h1>Contact</h1>
       <form className="contact-form" onSubmit={handleSubmit}>
       <label htmlFor="name">Name:</label>
@@ -58,10 +58,12 @@ const Contact = () => {
       
       {showModal && (
         <div className="modal" role="alertdialog">
-          <p>Message sent successfully!</p>
-        </div>
+        <p>Message sent successfully!</p>
+        <p>Thank you for getting in touch. I'll be reaching out to you soon.</p>
+      </div>
+      
       )}
-    </section>
+    </div>
   );
 };
 
