@@ -24,7 +24,7 @@ const Skills = () => {
             <p>JavaScript</p>
           </div>
           <div className="skill-card">
-            <FaReact className="skill-icon skill-icon-react" />
+            <FaReact className="skill-icon skill-icon-react spin" />
             <p>React</p>
           </div>
         </div>
@@ -49,10 +49,6 @@ const Skills = () => {
       </div>
     </div>
   );
-}
+};
 
 export default Skills;
-
-
-
-

@@ -72,7 +72,8 @@
 }
 
 .skill-icon-react {
-  color: #61DAFB; /* React Icon Color */
+  color: #61DAFB;
+  
 }
 
 
@@ -86,6 +87,16 @@
 
 .skill-icon-django {
   color: #092E20; /* Django Icon Color */
+}
+
+.spin {
+  animation: spin 2s infinite linear;
+}
+
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
 
 

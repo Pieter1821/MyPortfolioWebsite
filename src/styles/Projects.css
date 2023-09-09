@@ -45,10 +45,11 @@
 .project .btn-group {
   display: flex;
   justify-content: center;
-  margin-top: 15px;
+  
+   
 }
 
-/* Button styles */
+
 .btn {
   display: inline-flex;
   align-items: center;
