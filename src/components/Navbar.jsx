@@ -21,10 +21,10 @@ export default function Navbar() {
   };
 
   return (
-    <div className="navbar-container flex justify-center ">
+    <div className="navbar-container  flex justify-center ">
       <nav className="px-2 sm:px-4 py-2 w-full">
         <div className="max-w-screen-xl mx-auto px-4 md:px-8">
-          <div className="flex center justify-between h-20">
+          <div className=" flex center justify-between h-20">
             <div className="md:hidden flex justify-center">
               <button
                 onClick={toggleMenu}
