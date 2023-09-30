@@ -25,13 +25,13 @@ export function Projects() {
       githubUrl: 'https://github.com/Pieter1821/BankingApp',
     },
     {
-      name: 'My-Recipe-App',
+      name: 'ReactRecipeHub',
       imageSrc: LogoRecipeApp,
       description:
-        'My-Recipe-App is a React-powered recipe search application. Explore a wide variety of recipes and find your favorites with ease.',
+        'ReactRecipeHub is a React-powered recipe search application. Explore a wide variety of recipes and find your favorites with ease.',
       technologies: ['React'],
       githubUrl: 'https://github.com/Pieter1821/My-React-Recipe-App',
-      livePreviewUrl: 'https://yourfavoriterecipe.netlify.app/',
+      livePreviewUrl: 'https://reactrecipehub.netlify.app/',
     },
     {
       name: 'Interest Calculator App',
