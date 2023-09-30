@@ -1,7 +1,7 @@
 import React from 'react';
 import { FaHtml5, FaCss3, FaJs, FaReact } from 'react-icons/fa';
 import { IoLogoNodejs, IoLogoPython } from 'react-icons/io';
-import { DiDjango } from 'react-icons/di';
+
 import '../styles/Skills.css';
 
 const Skills = () => {
@@ -40,10 +40,6 @@ const Skills = () => {
           <div className="skill-card">
             <IoLogoPython className="skill-icon skill-icon-python" />
             <p>Python</p>
-          </div>
-          <div className="skill-card">
-            <DiDjango className="skill-icon skill-icon-django" />
-            <p>Django</p>
           </div>
         </div>
       </div>
