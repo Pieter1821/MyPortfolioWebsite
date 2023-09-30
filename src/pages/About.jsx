@@ -50,7 +50,7 @@ export function About() {
           Explore My Projects <FontAwesomeIcon icon={faLaptopCode} />
         </Link>
         <a
-          href="https://www.dropbox.com/scl/fi/8y2noskn25crz67hhg1eu/PieterDeane_CV.pdf?rlkey=q8huiblqosieg15shshfa6pws&dl=0"
+          href='https://www.dropbox.com/scl/fi/8y2noskn25crz67hhg1eu/PieterDeane_CV.pdf?rlkey=q8huiblqosieg15shshfa6pws&dl=0'
           target="_blank"
           rel="noopener noreferrer"
           className="btn-resume"
