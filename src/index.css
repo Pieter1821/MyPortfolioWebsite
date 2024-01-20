@@ -1,7 +1,42 @@
-
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
+:root {
+  --main-bg-color: #ffffff;
+  --text-color: #333333;
+  --strong-text-color: #555555;
+  --hover-strong-text-color: #f44336;
+  --button-border-color: rgb(67, 64, 64);
+  --heading-text-color: #333333;
+  --skills-bg-color: orange;
+  --skills-heading-color: #333;
+  --skills-card-bg-color: #ffffff;
+  --skills-border-color: #ddd;
+  --projects-bg-color: yellowgreen;
+  --project-card-bg-color: #ffffff;
+  --project-text-color: #333;
+  --project-button-bg-color: #3498db;
+  --project-button-text-color: #fff;
+  --project-button-hover-bg-color: #2980b9;
+  --nav-link-color: #333333;
+}
 
-
+.dark {
+  --main-bg-color: #121212;  
+  --text-color: #f5f5f5; 
+  --strong-text-color: #cccccc;
+  --hover-strong-text-color: #ff5722;
+  --button-border-color: #bbbbbb;
+  --skills-bg-color: #333333;  
+  --skills-heading-color: #f5f5f5;
+  --skills-card-bg-color: #444444;
+  --skills-border-color: #aaaaaa;
+  --projects-bg-color: #2c3e50; 
+  --project-card-bg-color: #34495e;
+  --project-text-color: #ecf0f1; 
+  --project-button-bg-color: #2980b9;
+  --project-button-text-color: #ecf0f1;
+  --project-button-hover-bg-color: #3498db;
+  --nav-link-color: #ecf0f1;
+}

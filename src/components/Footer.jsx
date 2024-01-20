@@ -26,18 +26,8 @@ const Footer = () => (
   <footer className="footer">
     <div className="footer__social-media">
       {socialMediaLinks.map((link, index) => (
-        <a
-          key={index}
-          href={link.url}
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label={link.alt}
-        >
-          <img
-            src={link.icon}
-            alt={link.alt}
-            className="footer__social-media-icon"
-          />
+        <a key={index} href={link.url} target="_blank" rel="noopener noreferrer" aria-label={link.alt}>
+          <img src={link.icon} alt={link.alt} className="footer__social-media-icon" />
         </a>
       ))}
     </div>

@@ -3,7 +3,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between; 
-  background: yellowgreen;
+  background: var(--projects-bg-color);
   padding: 20px; 
 }
 
@@ -14,8 +14,8 @@
   padding: 20px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  background-color: #ffffff;
-  color: #333;
+  background-color: var(--project-card-bg-color);
+  color: var(--project-text-color);
   text-align: center; 
   border-radius: 5px;
 }
@@ -56,15 +56,15 @@
   padding: 8px 16px;
   font-size: 14px;
   text-decoration: none;
-  background-color: #3498db; 
-  color: #fff;
+  background-color: var(--project-button-bg-color);
+  color: var(--project-button-text-color);
   border-radius: 5px;
   transition: background-color 0.3s ease;
   margin: 0 5px; 
 }
 
 .btn:hover {
-  background-color: #2980b9; 
+  background-color: var(--project-button-hover-bg-color);
 }
 
 .btn svg {

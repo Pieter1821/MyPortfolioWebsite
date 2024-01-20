@@ -1,0 +1,32 @@
+
+.skeleton {
+    background: linear-gradient(to right, #f0f0f0 20%, #e0e0e0 40%, #f0f0f0 60%);
+    background-size: 200% 100%;
+    animation: shimmer 1.2s ease-in-out infinite;
+    border-radius: 4px;
+    margin: 10px 0;
+    min-height: 20px;
+    width: 100%;
+  }
+  
+  .skeleton.title {
+    height: 35px;
+  }
+  
+  .skeleton.text {
+    height: 15px;
+  }
+  
+  .skeleton.thumbnail {
+    height: 100px;
+  }
+  
+  @keyframes shimmer {
+    0% {
+      background-position: -200px 0;
+    }
+    100% {
+      background-position: calc(200px + 100%) 0;
+    }
+  }
+  

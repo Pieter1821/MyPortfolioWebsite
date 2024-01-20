@@ -6,15 +6,29 @@ import Footer from './components/Footer';
 import Spinner from './components/Spinner';
 import Error from './components/Error';
 import { AnimatePresence } from 'framer-motion';
+import { useContext, useEffect } from 'react';
+import { DarkModeContext } from './contexts/DarkmodeContext';
 
 // Lazy-loaded components
 const Home = React.lazy(() => import('./pages/home'));
 const About = React.lazy(() => import('./pages/about'));
 const Projects = React.lazy(() => import('./pages/projects'));
-const Skills = React.lazy(() => import('./pages/skills'));
+const Skills = React.lazy(() => import('./pages/Skills'));
 const Contact = React.lazy(() => import('./pages/contact'));
 
 export default function App() {
+  const { darkMode } = useContext(DarkModeContext);
+
+  useEffect(() => {
+    const root = document.documentElement;
+    if (darkMode) {
+      root.classList.add('dark');
+    } else {
+      root.classList.remove('dark');
+    }
+  }, [darkMode]);
+
+
   return (
     <div className="App">
       <Router>
@@ -23,7 +37,6 @@ export default function App() {
           <Suspense
             fallback={
               <div className="loading" aria-label="Loading">
-                <h1 >Loading...</h1>
                 <Spinner />
               </div>
             }

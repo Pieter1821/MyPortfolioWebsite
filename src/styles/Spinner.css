@@ -15,10 +15,10 @@
   background-color: transparent;
   display: flex;
   justify-content: center;
-  width: 80px;
-  height: 80px;
+  width: 60px;
+  height: 60px;
   border: 4px solid #f3f3f3;
-  border-top: 4px solid #3fdb34;
+  border-top: 4px solid #4545;
   border-radius: 50%;
   animation: spin 1s linear infinite;
 }
