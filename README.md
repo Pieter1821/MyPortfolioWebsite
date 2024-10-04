@@ -47,6 +47,6 @@ I'm always open to new opportunities and collaborations. If you have any questio
 - GitHub: [GitHub Profile](https://github.com/Pieter1821)
 
 Thank you for visiting my portfolio website!
-```
+
 
 
