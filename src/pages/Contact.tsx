@@ -2,11 +2,12 @@
 import { useState } from "react";
 import emailjs from 'emailjs-com';
 import '../styles/Contact.css'
+import React from "react";
 
 const Contact = () => {
   const [showModal, setShowModal] = useState(false);
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e: { preventDefault: () => void; target: HTMLFormElement | undefined; }) => {
     e.preventDefault();
   
     try {
@@ -22,9 +23,10 @@ const Contact = () => {
       const userId = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
   
       const response = await emailjs.send(serviceId, templateId, payload, userId);
-  
       if (response.status === 200) {
-        e.target.reset();
+        if (e.target instanceof HTMLFormElement) {
+          e.target.reset();
+        }
         setShowModal(true);
         setTimeout(() => {
           setShowModal(false);
@@ -40,8 +42,8 @@ const Contact = () => {
 
   return (
     <div className="contact-container">
-      <form className="contact-form" onSubmit={handleSubmit}>
-      <label htmlFor="name">Name:</label>
+      <form className="contact-form" onSubmit={(e: React.FormEvent<HTMLFormElement>) => handleSubmit(e)}>
+        <label htmlFor="name">Name:</label>
         <input type="text" name="name" id="name" placeholder="Enter your name" required />
 
         <label htmlFor="email">Email:</label>

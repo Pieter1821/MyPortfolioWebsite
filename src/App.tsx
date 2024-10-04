@@ -4,29 +4,30 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Spinner from './components/Spinner';
-import Error from './components/Error';
 import { AnimatePresence } from 'framer-motion';
 import { useContext, useEffect } from 'react';
 import { DarkModeContext } from './contexts/DarkmodeContext';
+import NotFound from './components/NotFound';
 
-// Lazy-loaded components
-const Home = React.lazy(() => import('./pages/home'));
-const About = React.lazy(() => import('./pages/about'));
-const Projects = React.lazy(() => import('./pages/projects'));
+
+
+const Home = React.lazy(() => import('./pages/Home'));
+const About = React.lazy(() => import('./pages/About'));
+const Projects = React.lazy(() => import('./pages/Projects'));
 const Skills = React.lazy(() => import('./pages/Skills'));
-const Contact = React.lazy(() => import('./pages/contact'));
+const Contact = React.lazy(() => import('./pages/Contact'));
 
 export default function App() {
-  const { darkMode } = useContext(DarkModeContext);
+  const darkModeContext = useContext(DarkModeContext);
 
   useEffect(() => {
     const root = document.documentElement;
-    if (darkMode) {
+    if (darkModeContext?.darkMode) {
       root.classList.add('dark');
     } else {
       root.classList.remove('dark');
     }
-  }, [darkMode]);
+  }, [darkModeContext?.darkMode]);
 
 
   return (
@@ -49,7 +50,7 @@ export default function App() {
               <Route path="/projects" element={<Projects />} />
               <Route path="/skills" element={<Skills />} />
               <Route path="/contact" element={<Contact />} />
-              <Route path="*" element={<Error />} />
+              <Route path="*" element={<NotFound />} />
             </Routes>
             </AnimatePresence>
           </Suspense>

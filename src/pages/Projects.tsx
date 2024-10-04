@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 import bankingapp from '../assets/bankingapp.png';
 import MyTODOAPP from '../assets/MyTODOAPP.jpeg';
@@ -8,8 +8,17 @@ import LoadingSkeleton from '../components/LoadingSkeleton'
 
 import '../styles/projects.css';
 
+type Project = {
+  name: string;
+  imageSrc: string;
+  description: string;
+  technologies: string[];
+  githubUrl: string;
+  livePreviewUrl?: string;
+}
+
 export function Projects() {
-  const [projects, setProjects] = useState([]);
+  const [projects, setProjects] = useState<Project[]>([]);
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {

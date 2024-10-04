@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { FaCoffee, FaMusic, FaRunning } from 'react-icons/fa';
 import '../styles/interests.css';
 

@@ -1,7 +1,9 @@
-import React from 'react';
+
 import { Link } from 'react-router-dom';
 import { FaArrowRight } from 'react-icons/fa';
-import Interests from '../components/Interests';
+import Interests from './Interests';
+
+
 
 const Hero = () => {
   return (

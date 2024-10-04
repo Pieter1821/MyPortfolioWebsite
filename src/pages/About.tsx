@@ -1,10 +1,11 @@
-import React from 'react';
+
 import { motion } from 'framer-motion';
-import { Link } from 'react-router-dom';
+
 import '../styles/About.css';
 import personalpic from '../assets/personalpic.jpeg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faRocket, faLaptopCode, faHandshake, faFileAlt } from '@fortawesome/free-solid-svg-icons';
+import {Link} from 'react-router-dom';
 
 export function About() {
   const buttonVariants = {

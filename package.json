@@ -19,10 +19,11 @@
     "flowbite": "^1.8.1",
     "font-awesome": "^4.7.0",
     "framer-motion": "^10.12.18",
+    "gsap": "^3.12.5",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-icons": "^4.9.0",
-    "react-router-dom": "^6.12.1"
+    "react-icons": "^4.9.0"
+  
   },
   "devDependencies": {
     "@babel/preset-env": "^7.23.8",
@@ -32,8 +33,8 @@
     "@testing-library/react": "^14.1.2",
     "@testing-library/user-event": "^14.5.2",
     "@types/jest": "^29.5.11",
-    "@types/react": "^18.0.37",
-    "@types/react-dom": "^18.0.11",
+    "@types/react": "^18.3.11",
+    "@types/react-dom": "^18.3.0",
     "@vitejs/plugin-react": "^4.0.0",
     "autoprefixer": "^10.4.15",
     "eslint": "^8.38.0",
