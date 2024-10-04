@@ -76,6 +76,7 @@ export default function Navbar() {
                 <li key={index}>
                   <NavLink
                     to={link.to}
+                    
                     className="nav-link"
                     activeClassName="active"
                     onClick={toggleMenu}
