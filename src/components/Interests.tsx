@@ -1,6 +1,6 @@
 
 import { FaCoffee, FaMusic, FaRunning } from 'react-icons/fa';
-import '../styles/interests.css';
+import "../styles/Interests.css";
 
 const activities = [
   {
