@@ -1,6 +1,6 @@
 import { createContext, useState, useEffect } from 'react'
 
-interface DarkModeContextType {
+export type DarkModeContextType ={
   darkMode: boolean
   setDarkMode: React.Dispatch<React.SetStateAction<boolean>>
 }

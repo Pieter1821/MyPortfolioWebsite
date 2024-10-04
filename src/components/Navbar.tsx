@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 import { VscChromeClose, VscMenu } from 'react-icons/vsc';
 import { MdDarkMode, MdLightMode } from 'react-icons/md';
 import { FaLinkedin, FaGithub } from 'react-icons/fa';
-import { DarkModeContext } from '../contexts/DarkmodeContext';
+import { DarkModeContext , DarkModeContextType } from '../contexts/DarkmodeContext';
 
 import '../styles/Navbar.css';
 
@@ -21,7 +21,8 @@ const socialMediaLinks = [
 ];
 
 export default function Navbar() {
-  const { darkMode, setDarkMode } = useContext(DarkModeContext);
+  const darkModeContext = useContext(DarkModeContext) as DarkModeContextType;
+  const { darkMode, setDarkMode } = darkModeContext;
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -44,8 +45,7 @@ export default function Navbar() {
               <NavLink
                 key={index}
                 to={link.to}
-                className="nav-link"
-                activeClassName="active"
+                className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}
               >
                 {link.label}
               </NavLink>
@@ -77,8 +77,7 @@ export default function Navbar() {
                   <NavLink
                     to={link.to}
                     
-                    className="nav-link"
-                    activeClassName="active"
+                    className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}
                     onClick={toggleMenu}
                   >
                     {link.label}

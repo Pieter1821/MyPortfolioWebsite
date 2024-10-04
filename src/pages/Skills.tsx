@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { FaHtml5, FaCss3, FaJs, FaReact } from 'react-icons/fa';
 import { IoLogoNodejs, IoLogoPython } from 'react-icons/io';
 
