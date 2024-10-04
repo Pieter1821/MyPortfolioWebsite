@@ -31,8 +31,8 @@ const projectsData: Project[] = [
     imageSrc: triviax,
     description: 'Trivia X is a quiz application that tests your knowledge on a wide range of topics. The app includes a variety of questions, from general knowledge to specific categories, and provides instant feedback on your answers.',
     technologies: ['tailwind ,React ,Open Trivia DB'],
-    githubUrl: ' https://github.com/Pieter1821/TriviaX',
-    livePreviewUrl: ' ',
+    githubUrl: ' https://github.com/Pieter1821/Trivia-X',
+    livePreviewUrl: 'https://trivia-x.netlify.app/',
   
   },
   {

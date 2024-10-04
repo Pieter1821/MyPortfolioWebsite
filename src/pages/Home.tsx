@@ -1,4 +1,4 @@
-import "../styles/home.css";
+import "../styles/Home.css"
 
 import Hero from "../components/Hero";
 import About from "../pages/About";
