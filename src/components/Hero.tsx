@@ -5,7 +5,7 @@ import Interests from './Interests';
 
 const Hero: React.FC = () => {
   return (
-    <div className="relative bg-gradient-to-b from-indigo-900 to-indigo-700 dark:from-gray-100 dark:to-gray-300 text-white dark:text-gray-900 overflow-hidden">
+    <div className="relative bg-gradient-to-b from-cyan-900 to-cyan-700 dark:from-gray-100 dark:to-gray-300 text-white dark:text-gray-900 overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-b from-[rgba(26,32,44,0.8)] to-[rgba(255,255,255,0.8)] opacity-50"></div>
       <div className="relative px-6 py-20 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
@@ -19,13 +19,13 @@ const Hero: React.FC = () => {
           <div className="mt-10 flex items-center justify-center space-x-4">
             <Link
               to="/contact"
-              className="rounded-md bg-indigo-600 dark:bg-indigo-500 px-4 py-2 text-sm font-semibold text-white hover:bg-indigo-700 dark:hover:bg-indigo-600 focus:bg-indigo-700 dark:focus:bg-indigo-600 focus:outline-none focus:ring-2 focus:ring-indigo-500 dark:focus:ring-indigo-400 transition duration-300 ease-in-out transform hover:scale-105"
+              className="rounded-md bg-zinc-600 dark:bg-zinc-500 px-4 py-2 text-sm font-semibold text-white hover:bg-zinc-700 dark:hover:bg-zinc-600 focus:bg-zinc-700 dark:focus:bg-zinc-600 focus:outline-none focus:ring-2 focus:ring-zinc-500 dark:focus:ring-zinc-400 transition duration-300 ease-in-out transform hover:scale-105"
             >
               Connect with me
             </Link>
             <Link
               to="/about"
-              className="text-sm font-semibold leading-6 text-gray-200 dark:text-gray-800 hover:text-indigo-300 dark:hover:text-indigo-400 flex items-center transition duration-300 ease-in-out transform hover:translate-x-1"
+              className="text-sm font-semibold leading-6 text-gray-200 dark:text-gray-800 hover:text-indigo-300 dark:hover:text-zinc-400 flex items-center transition duration-300 ease-in-out transform hover:translate-x-1"
             >
               Discover more <FaArrowRight className="ml-1" />
             </Link>
