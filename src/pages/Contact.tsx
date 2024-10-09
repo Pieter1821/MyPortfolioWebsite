@@ -1,17 +1,17 @@
-
 import { useState } from "react";
 import emailjs from 'emailjs-com';
 import '../styles/Contact.css'
 import React from "react";
 
+
 const Contact = () => {
   const [showModal, setShowModal] = useState(false);
 
-  const handleSubmit = async (e: { preventDefault: () => void; target: HTMLFormElement | undefined; }) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
   
     try {
-      const formData = new FormData(e.target);
+      const formData = new FormData(e.currentTarget);
       const payload = {
         user_name: formData.get('name'),
         user_email: formData.get('email'),
@@ -24,9 +24,7 @@ const Contact = () => {
   
       const response = await emailjs.send(serviceId, templateId, payload, userId);
       if (response.status === 200) {
-        if (e.target instanceof HTMLFormElement) {
-          e.target.reset();
-        }
+        e.currentTarget.reset();
         setShowModal(true);
         setTimeout(() => {
           setShowModal(false);
@@ -42,7 +40,7 @@ const Contact = () => {
 
   return (
     <div className="contact-container">
-      <form className="contact-form" onSubmit={(e: React.FormEvent<HTMLFormElement>) => handleSubmit(e)}>
+      <form className="contact-form" onSubmit={handleSubmit}>
         <label htmlFor="name">Name:</label>
         <input type="text" name="name" id="name" placeholder="Enter your name" required />
 
@@ -53,16 +51,13 @@ const Contact = () => {
         <textarea name="message" id="message" placeholder="Enter your message" required></textarea>
 
         <button type="submit">Submit</button>
-        
-        
       </form>
       
       {showModal && (
         <div className="modal" role="alertdialog">
-        <p>Message sent successfully!</p>
-        <p>Thank you for getting in touch. I'll be reaching out to you soon.</p>
-      </div>
-      
+          <p>Message sent successfully!</p>
+          <p>Thank you for getting in touch. I'll be reaching out to you soon.</p>
+        </div>
       )}
     </div>
   );
