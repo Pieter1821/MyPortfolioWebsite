@@ -2,7 +2,7 @@
 
 interface ImportMetaEnv {
     readonly VITE_EMAILJS_PUBLIC_KEY: string
-    // Add other env variables here if needed
+
   }
   
   interface ImportMeta {
